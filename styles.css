@@ -1,0 +1,285 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Apply font to entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Adjust overall text size */
+    color: #333; /* Set a default text color */
+}
+
+/* Make headings bold */
+h1, h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+/* Apply font to navbar */
+/* Navbar styling */
+.navbar {
+    font-size: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Style for navbar links */
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 15px;
+    position: relative; /* Needed for pseudo-element */
+    color: black; /* Change menu text color */
+}
+
+/* Create the hover underline effect */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Adjusts the position of the underline */
+    width: 0; /* Start with zero width */
+    height: 1px; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Expand the underline on hover */
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Full width on hover */
+}
+
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+/* .navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+} */
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4b400;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Section styling */
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent content from spilling over */
+}
+
+/* #about { background: #f4f4f4; }
+#experience { background: #f4f4f4; }
+#projects { background: #f4f4f4; }
+#education { background: #f4f4f4; } */
+
+/* Content styling */
+.content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Profile image */
+img.profile {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.navbar {
+    font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+    font-size: 18px; /* Increase font size */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+.navbar-brand {
+    font-size: 22px; /* Increase brand font size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px; /* Increase menu item font size */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+}
+
+
+/* Initially hide sections */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Class to apply when section is in view */
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents overlapping */
+}
+
+.about-text {
+    width: 60%;
+    text-align: left;
+}
+
+.about-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
+}
+
+.about-image img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 50px; /* Ensures space before next section */
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 60%; /* Adjust for smaller screens */
+    }
+}
+
+
+.social-icons img {
+    max-width: 40px;
+    height: auto;
+}
+
+.section-divider {
+    display: block; /* Ensure it's a block element */
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 80%;
+    margin: auto; /* Centers it horizontally */
+    text-align: center;
+}
+
+.experience-item {
+    margin-bottom: 40px;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 50px;
+    height: auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
