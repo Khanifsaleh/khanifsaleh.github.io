@@ -129,9 +129,95 @@
     <hr class="section-divider">
     <section id="projects" class="section py-5">
         <div class="container">
-            <h2 class="text-center">Personal Projects</h2>
-            <h3>Project Name</h3>
-            <p>Project description goes here.</p>
+<!--             <h2 class="text-center">Personal Projects</h2>
+            <h3>Stock News Monitoring Dashboard</h3>
+            <p>Built a real-time stock news monitoring system designed for Indonesian market enthusiasts, combining web scraping, NLP, and sentiment analysis. The system extracts and processes financial news, then classifies it into main keywords, sentiment, and potential market reaction.</p> -->
+            <section class="project" id="stock-news-monitoring" aria-labelledby="snm-title">
+  <style>
+    .project{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:20px;max-width:980px;margin:18px auto;box-shadow:0 6px 18px rgba(2,6,23,.06)}
+    .project h2{font-size:1.35rem;margin:0 0 .4rem}
+    .eyebrow{font-size:.78rem;letter-spacing:.08em;color:#64748b;text-transform:uppercase}
+    .meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:.25rem 0 1rem}
+    .badge{background:#f1f5f9;color:#0f172a;border:1px solid #e2e8f0;border-radius:999px;padding:.18rem .55rem;font-size:.75rem}
+    .summary{margin:.4rem 0 1rem;color:#334155}
+    .cols{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:720px){.cols{grid-template-columns:1.1fr .9fr}}
+    .card{border:1px solid #e5e7eb;border-radius:12px;padding:12px}
+    .card h3{font-size:1rem;margin:.1rem 0 .5rem;color:#0f172a}
+    ul{margin:.25rem 0 .25rem 1rem;padding:0}
+    li{margin:.22rem 0}
+    .links{margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.6rem}
+    .btn{border:1px solid #0ea5e9;color:#0369a1;background:#e0f2fe;border-radius:10px;padding:.38rem .65rem;font-size:.85rem;text-decoration:none}
+    .muted{color:#64748b}
+    .kpi{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+    .kpi div{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:.35rem .55rem;font-size:.8rem}
+    code{background:#f1f5f9;border:1px solid #e2e8f0;border-radius:6px;padding:.08rem .35rem}
+  </style>
+
+  <div class="eyebrow">Selected Project</div>
+  <h2 id="snm-title">Stock News Monitoring Dashboard (Indonesia)</h2>
+
+  <div class="meta">
+    <span class="badge">Web Scraping</span>
+    <span class="badge">NLP</span>
+    <span class="badge">Sentiment</span>
+    <span class="badge">Looker Studio</span>
+    <span class="badge">Python</span>
+  </div>
+
+  <p class="summary">
+    Real-time system that ingests Indonesian financial news, cleans & structures text, extracts tickers and market events,
+    and scores sentiment to help swing-trading and value-investing decisions.
+  </p>
+
+  <div class="kpi">
+    <div><strong>5+</strong> sources (RSS/HTML)</div>
+    <div><strong>Actionable tags</strong>: dividen, laba naik/turun, aksi korporasi, dll.</div>
+    <div><strong>Searchable</strong> keyword index</div>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h3>What I built</h3>
+      <ul>
+        <li>Scrapers (requests + BeautifulSoup) with polite rotation & date filters.</li>
+        <li>NLP pipeline: text cleaning, company → ticker mapping, sentiment & event tagging.</li>
+        <li>Per-company sentiment with short Indonesian rationale (predicate + object).</li>
+        <li>Data store: SQLite (news + status), optional Google Sheets for Looker Studio.</li>
+        <li>Interactive dashboard: trending emitens, keywords, and drill-downs to articles.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Tech & Workflow</h3>
+      <ul>
+        <li><strong>Python</strong> (pandas, requests, bs4, feedparser, regex)</li>
+        <li><strong>NLP</strong>: rule-based + LLM for sentiment & event phrases</li>
+        <li><strong>Storage</strong>: SQLite / Google Sheets connector</li>
+        <li><strong>Viz</strong>: Looker Studio with free-text <code>search_text</code> field</li>
+        <li><strong>Orchestration</strong>: Streamlit scheduler & manual trigger</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>Impact</h3>
+    <ul>
+      <li>Turns unstructured news into searchable, market-ready insights.</li>
+      <li>Speeds up buy/sell screening with per-ticker sentiment & catalyst tags.</li>
+      <li>Bridges daily sentiment (swing) with long-term fundamentals (value).</li>
+    </ul>
+  </div>
+
+  <div class="links">
+    <!-- Replace the href values with your actual links -->
+    <a class="btn" href="https://your-demo-link.example" target="_blank" rel="noopener">Live Dashboard</a>
+    <a class="btn" href="https://github.com/yourrepo/stock-monitoring" target="_blank" rel="noopener">Source Code</a>
+    <span class="muted">Role: Individual project • Status: Ongoing</span>
+  </div>
+</section>
+
+            
         </div>
     </section>
     <hr class="section-divider">
