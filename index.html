@@ -59,70 +59,110 @@
     <section id="experience" class="section py-5">
         <div class="container">
             <h2 class="text-center">Experience</h2>
+            <section class="experience" id="experience" aria-labelledby="exp-title">
+              <style>
+                .experience{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;max-width:980px;margin:18px auto}
+                .experience h2{font-size:1.5rem;margin:0 0 1rem}
+                .exp-item{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 4px 14px rgba(2,6,23,.05)}
+                .exp-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+                .exp-header img{width:52px;height:52px;border-radius:10px;object-fit:cover;border:1px solid #e5e7eb}
+                .exp-header h3{margin:0;font-size:1.2rem;color:#0f172a}
+                .exp-header p{margin:2px 0 0;color:#475569;font-size:.9rem}
+                .badges{margin:6px 0 12px;display:flex;flex-wrap:wrap;gap:.5rem}
+                .badge{background:#f1f5f9;color:#0f172a;border:1px solid #e2e8f0;border-radius:999px;padding:.18rem .55rem;font-size:.75rem}
+                ul{margin:0;padding-left:1.2rem;color:#334155}
+                li{margin:.3rem 0}
+              </style>
             
-            <!-- Experience Template -->
-            <div class="experience-item">
-                <div class="experience-header">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyKhd7KhNGxwUvs67IbSBF5Hqtcu_LKKFnRWKlnjYgMiIB-gmb5RSYoCasj3-9N6NHc6cQNCqbqQ5a_MDdDyQ57qrW0SD1PEBluWXHmHs3INIvxzTDoI_33KbKc12aCZVFAIYdQfpWOfr8Qa-lrDKk1AAVadOG_brhfvXkXpAr_sFth3oWnE-ktndF7w/w1200-h630-p-k-no-nu/FREEPORT.jpg" alt="Freeport Indonesia Logo" class="company-logo">
-                    <div>
-                        <h3>Machine Learning Engineer</h3>
-                        <p><strong>Freeport Indonesia</strong> · Full-time · Remote (Feb 2024 - Present)</p>
-                    </div>
-                </div>
-                <ul>
-                    <li>Optimized and enhanced data science models for better efficiency and scalability.</li>
-                    <li>Deployed machine learning models into production, ensuring reliability and performance.</li>
-                    <li>Developed and maintained data pipelines for seamless machine learning workflows.</li>
-                    <li>Implemented CI/CD best practices for model management and deployment.</li>
-                    <li>Built interactive Power BI dashboards to provide actionable insights.</li>
-                </ul>
-            </div>
+              <h2 id="exp-title">Experience</h2>
             
-            <div class="experience-item">
-                <div class="experience-header">
-                    <img src="https://th.bing.com/th/id/R.e55334dcae2caf469ba521317156bd5f?rik=GqjVr4YG%2fEJBMw&riu=http%3a%2f%2fpgi-data.com%2fimages%2fonly-logo-clean.png&ehk=T7kZzptN%2forLkuOfuOlzOGBYw1g1jD6DbwTy%2fOsbkeQ%3d&risl=&pid=ImgRaw&r=0" alt="PGI Data Logo" class="company-logo">
-                    <div>
-                        <h3>Data Scientist</h3>
-                        <p><strong>PGI Data (Platinumetrix Global Inovasi)</strong> · Full-time · Remote (Jan 2022 - Jan 2024)</p>
-                    </div>
+              <div class="exp-item">
+                <div class="exp-header">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyKhd7KhNGxwUvs67IbSBF5Hqtcu_LKKFnRWKlnjYgMiIB-gmb5RSYoCasj3-9N6NHc6cQNCqbqQ5a_MDdDyQ57qrW0SD1PEBluWXHmHs3INIvxzTDoI_33KbKc12aCZVFAIYdQfpWOfr8Qa-lrDKk1AAVadOG_brhfvXkXpAr_sFth3oWnE-ktndF7w/w1200-h630-p-k-no-nu/FREEPORT.jpg" alt="Freeport Indonesia Logo">
+                  <div>
+                    <h3>Machine Learning Engineer</h3>
+                    <p><strong>Freeport Indonesia</strong> · Full-time · Remote (Feb 2024 – Present)</p>
+                  </div>
+                </div>
+                <div class="badges">
+                  <span class="badge">Machine Learning</span>
+                  <span class="badge">MLOps</span>
+                  <span class="badge">Data Pipelines</span>
+                  <span class="badge">Power BI</span>
                 </div>
                 <ul>
-                    <li>Developed demand forecasting models to predict sales trends using historical data.</li>
-                    <li>Built a price prediction model for goods using NLP and machine learning.</li>
-                    <li>Implemented OCR for Indonesian Identity Cards (KTP) to extract key information.</li>
-                    <li>Conducted data analytics to generate valuable insights for business decision-making.</li>
+                  <li>Optimized and enhanced machine learning models for scalability and performance.</li>
+                  <li>Deployed ML models into production with monitoring for reliability.</li>
+                  <li>Built and maintained automated data pipelines.</li>
+                  <li>Implemented CI/CD best practices for model deployment.</li>
+                  <li>Developed interactive Power BI dashboards for actionable insights.</li>
                 </ul>
-            </div>
-    
-            <div class="experience-item">
-                <div class="experience-header">
-                    <img src="https://media.licdn.com/dms/image/C560BAQGqRkwUrhq5rQ/company-logo_200_200/0/1630516296608?e=2147483647&v=beta&t=jGayKU5TLH8kCzNWiTRHDxUCN23f4nDY5Zzk0Pqaz_4" alt="Alphalitical Logo" class="company-logo">
-                    <div>
-                        <h3>Data Scientist</h3>
-                        <p><strong>Alphalitical</strong> · Part-time · Remote (Jun 2023 - Sep 2023)</p>
-                    </div>
+              </div>
+            
+              <div class="exp-item">
+                <div class="exp-header">
+                  <img src="https://th.bing.com/th/id/R.e55334dcae2caf469ba521317156bd5f?rik=GqjVr4YG%2fEJBMw&riu=http%3a%2f%2fpgi-data.com%2fimages%2fonly-logo-clean.png&ehk=T7kZzptN%2forLkuOfuOlzOGBYw1g1jD6DbwTy%2fOsbkeQ%3d&risl=&pid=ImgRaw&r=0" alt="PGI Data Logo">
+                  <div>
+                    <h3>Data Scientist</h3>
+                    <p><strong>PGI Data (Platinumetrix Global Inovasi)</strong> · Full-time · Remote (Jan 2022 – Jan 2024)</p>
+                  </div>
+                </div>
+                <div class="badges">
+                  <span class="badge">Forecasting</span>
+                  <span class="badge">NLP</span>
+                  <span class="badge">OCR</span>
+                  <span class="badge">Analytics</span>
                 </div>
                 <ul>
-                    <li>Developed sentiment and emotion classification models for analyzing tweets.</li>
-                    <li>Designed a cloud-based data pipeline using Google Cloud Platform (GCP).</li>
+                  <li>Developed demand forecasting models to predict sales trends.</li>
+                  <li>Built price prediction models for goods using NLP and ML.</li>
+                  <li>Implemented OCR for Indonesian identity cards (KTP).</li>
+                  <li>Conducted data analytics for business decision support.</li>
                 </ul>
-            </div>
-    
-            <div class="experience-item">
-                <div class="experience-header">
-                    <img src="https://jpassetsid.jobplanet.com/production/uploads/company/logo/43980/medium_ebdesk.jpg" alt="eBdesk Teknologi Logo" class="company-logo">
-                    <div>
-                        <h3>Data Scientist</h3>
-                        <p><strong>PT eBdesk Teknologi</strong> · Full-time · Tangerang Selatan (Jul 2019 - Jan 2022)</p>
-                    </div>
+              </div>
+            
+              <div class="exp-item">
+                <div class="exp-header">
+                  <img src="https://media.licdn.com/dms/image/C560BAQGqRkwUrhq5rQ/company-logo_200_200/0/1630516296608?e=2147483647&v=beta&t=jGayKU5TLH8kCzNWiTRHDxUCN23f4nDY5Zzk0Pqaz_4" alt="Alphalitical Logo">
+                  <div>
+                    <h3>Data Scientist</h3>
+                    <p><strong>Alphalitical</strong> · Part-time · Remote (Jun 2023 – Sep 2023)</p>
+                  </div>
+                </div>
+                <div class="badges">
+                  <span class="badge">Sentiment Analysis</span>
+                  <span class="badge">NLP</span>
+                  <span class="badge">GCP</span>
                 </div>
                 <ul>
-                    <li>Developed Named Entity Recognition (NER) models for text classification.</li>
-                    <li>Built sentiment and emotion extraction models using deep learning.</li>
-                    <li>Implemented a speech-to-text system for transcribing various audio sources.</li>
-                    <li>Designed an audio source separation system to enhance audio processing tasks.</li>
+                  <li>Developed sentiment and emotion classification models for Twitter data.</li>
+                  <li>Designed a cloud-based data pipeline on Google Cloud Platform (GCP).</li>
                 </ul>
-            </div>
+              </div>
+            
+              <div class="exp-item">
+                <div class="exp-header">
+                  <img src="https://jpassetsid.jobplanet.com/production/uploads/company/logo/43980/medium_ebdesk.jpg" alt="eBdesk Teknologi Logo">
+                  <div>
+                    <h3>Data Scientist</h3>
+                    <p><strong>PT eBdesk Teknologi</strong> · Full-time · Tangerang Selatan (Jul 2019 – Jan 2022)</p>
+                  </div>
+                </div>
+                <div class="badges">
+                  <span class="badge">NER</span>
+                  <span class="badge">Deep Learning</span>
+                  <span class="badge">Speech-to-Text</span>
+                  <span class="badge">Audio Processing</span>
+                </div>
+                <ul>
+                  <li>Developed Named Entity Recognition (NER) models for text classification.</li>
+                  <li>Built sentiment and emotion extraction models using deep learning.</li>
+                  <li>Implemented speech-to-text systems for transcription.</li>
+                  <li>Designed audio source separation systems for enhanced audio processing.</li>
+                </ul>
+              </div>
+            </section>
+
         </div>
     </section>
 
